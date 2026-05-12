@@ -1,13 +1,13 @@
 # Casks/dover.rb
 cask "dover" do
-  version "0.18.2"
+  version "0.18.3"
 
   if Hardware::CPU.arm?
     url "https://github.com/qoinly/homebrew-dover/releases/download/v#{version}/Dover-#{version}-darwin-arm64.zip"
-    sha256 "f6ee6bb8d2ffabf515265c29118f1d046786f8a85377aedd2ad40d25f2eb18d9"
+    sha256 "f40cb4b61dbe94807794d555a19e0fc1dfc13b0ab5ba91e9dd41b631adf09904"
   else
     url "https://github.com/qoinly/homebrew-dover/releases/download/v#{version}/Dover-#{version}-darwin-amd64.zip"
-    sha256 "274aef22cc2bbc955d4b31885b920c153435c212e8cb98da5213f646f3b6375d"
+    sha256 "4dd6a07aeaeb109766f646e64fe67e9007d0803fa95039bd23af403a3457db97"
   end
 
   name "Dover"
