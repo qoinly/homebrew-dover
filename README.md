@@ -8,6 +8,11 @@
 <h1 align="center">homebrew-dover</h1>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/macOS-arm64-000?style=flat&logo=apple&logoColor=white" alt="macOS arm64">
+  <img src="https://img.shields.io/badge/macOS-amd64-000?style=flat&logo=apple&logoColor=white" alt="macOS amd64">
+</p>
+
+<p align="center">
   Homebrew tap for <a href="https://www.usedover.app">Dover</a> — a
   local-first API client. Postman alternative that runs on your
   machine.
@@ -44,12 +49,20 @@ to use.
 
 ## Builds
 
-Each release ships two zipped `.app` bundles:
+Each release ships four macOS artifacts on the GitHub Release:
 
-- `Dover-<version>-darwin-arm64.zip` — Apple Silicon
-- `Dover-<version>-darwin-amd64.zip` — Intel Mac
+- `Dover-<version>-darwin-arm64.zip` — Apple Silicon, brew cask
+- `Dover-<version>-darwin-amd64.zip` — Intel Mac, brew cask
+- `Dover-<version>-darwin-arm64.dmg` — Apple Silicon, manual install
+- `Dover-<version>-darwin-amd64.dmg` — Intel Mac, manual install
 
-Homebrew picks the right one based on the host architecture.
+Homebrew picks the right zip based on the host architecture. The
+DMGs are for users who'd rather double-click an installer than touch
+the terminal.
+
+Windows lives in a separate repo:
+[`qoinly/scoop-dover`](https://github.com/qoinly/scoop-dover) — Scoop
+bucket + NSIS installer on the same release tag.
 
 ## Code signing
 
