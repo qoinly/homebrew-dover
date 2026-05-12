@@ -4,10 +4,10 @@ cask "dover" do
 
   if Hardware::CPU.arm?
     url "https://github.com/qoinly/homebrew-dover/releases/download/v#{version}/Dover-#{version}-darwin-arm64.zip"
-    sha256 "f40cb4b61dbe94807794d555a19e0fc1dfc13b0ab5ba91e9dd41b631adf09904"
+    sha256 "475249b56d4fd9102aabb0998b0c893e8b578f065815d8ff808a6c805818d92b"
   else
     url "https://github.com/qoinly/homebrew-dover/releases/download/v#{version}/Dover-#{version}-darwin-amd64.zip"
-    sha256 "4dd6a07aeaeb109766f646e64fe67e9007d0803fa95039bd23af403a3457db97"
+    sha256 "43d900221c2f93794fa22dc94eeb073201a82abdf32348ab43df3fa4d31b3d2c"
   end
 
   name "Dover"
